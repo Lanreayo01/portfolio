@@ -1,0 +1,13 @@
+
+
+.hold{
+    background-color: rgba(12, 94, 141, 0.1);
+}
+.all-body{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin-top: 200px;
+}

@@ -1,0 +1,91 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+}
+
+.icon-button{
+    cursor: pointer;
+}
+
+.header-image{    
+    margin-right: 50px;
+}
+
+.rightheader-image{    
+    margin-right: 20px;
+}
+
+.header-text{    
+    margin-bottom: 10px;
+    border: none;
+}
+
+.grouplinks{
+    display: flex;
+    margin-top: 30px;
+}
+
+.headerlinks{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    letter-spacing: 3px;
+    gap: 35px;
+    margin-right: 40px;
+    .t{
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: bold
+    }
+}
+
+.grouplinks-contents{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    .letter{
+        color: blue;
+    }
+}
+
+.Header-Icons{
+    padding-left: 80px;
+    margin-top: 30px;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-right: 50px;
+
+    .rightheader-text{
+        margin-top: 15px;
+        border: none;
+        height: 25px;
+        font-weight: bold;
+        letter-spacing: 3px;       
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    body{
+        width: 100%;
+        display: block;
+    }
+}
+
