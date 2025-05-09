@@ -1,5 +1,10 @@
 .body{
-    background-color: red;
+    background-color: #006A71;
     display: flex;
     margin-top: 170px;
+    flex-direction: row;
+    gap: 250px;
+}
+.content{
+    gap: 70px;
 }

@@ -1,12 +1,12 @@
 .hero{
-    background-color: red;
+    background-color: #F2EFE7;
     margin-top: 100px;
     margin-bottom: 250px;
 }
 .hero-contents{
-    background-color: blue;
+    background-color: #F2EFE7;
     max-width: 50%;  
-    padding: 15px;  
+    padding: 25px;  
 }
 .line{
     width: 20%;
@@ -22,4 +22,7 @@
     color: #2973B2;
     font-weight: bold;
     border: none;
+}
+.img-side{
+    margin-top: 80px;
 }

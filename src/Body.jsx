@@ -6,7 +6,7 @@ function Body() {
   return (
     <div className='body'>
       <div className='img-side'>
-        <div><img src={Note} /></div>
+        <div><img src={Note} style={{height:"250px"}} /></div>
       </div>
       <div className='content'>
         <h1> Note App</h1>

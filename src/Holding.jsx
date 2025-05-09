@@ -8,6 +8,7 @@ import Scroll from './Scroll'
 import HeroSection from './HeroSection'
 import Learning from './Learning'
 import Body from './Body'
+import SecondBody from './SecondBody'
 
 
 function Holding() {
@@ -51,6 +52,10 @@ function Holding() {
       <Body/>
     </div>
     
+    <div>
+      <SecondBody/>
+    </div>
+        
     </div>    
     </motion.div>
   )
