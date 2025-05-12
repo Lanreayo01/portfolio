@@ -9,8 +9,13 @@
     gap: 200px;
     font-family: "Poppins", sans-serif;
     font-size: 30px;
-    margin-top: 200px;
+    
 }
+
+.nav{
+    position: absolute;
+}
+
 .all-body{
     background-image: url("./assets/rhombus.gif");
     width: 100%;

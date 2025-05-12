@@ -9,6 +9,7 @@ import HeroSection from './HeroSection'
 import Learning from './Learning'
 import Body from './Body'
 import SecondBody from './SecondBody'
+import HoldingSroll from './assets/scroll2.gif'
 
 
 function Holding() {
@@ -37,7 +38,7 @@ function Holding() {
     </div>
     
     <div>
-      <Scroll/>
+      <Scroll imgSrc={HoldingSroll}/>
     </div>
     
     <div>

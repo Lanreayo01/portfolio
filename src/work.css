@@ -1,0 +1,65 @@
+.hero-section{
+    margin-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+}
+.work-screen{
+    background-color: #48A6A7;
+}
+.first-header{
+    text-align: center;
+}
+.line-new{
+    width: 20%;
+    margin-top: -20px;
+    height: 9px;
+    border-radius: 5px;
+    background-color: #006A71;
+    border: none;
+}
+.first-word{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.second-section{
+    background-color: #006A71;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    gap: 35px;
+    min-height: 550px;
+}
+.hero-word{
+    flex: 5;
+    width: 100%;
+    text-align: justify;
+}
+.hero-image{
+    background-image: url("./assets/construction.gif");
+    flex: 5;
+    width: 100%;
+}
+.fluid{
+    padding: 25px;
+}
+.build{
+    display: flex;
+    flex-direction: row;
+    min-height: 550px;
+    padding: 15px;
+}
+.build-text{
+    flex: 5;
+}
+.img-build{
+    flex: 7;
+    justify-content: center;
+}
+.work-button{
+    text-align: center;
+}

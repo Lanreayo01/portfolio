@@ -2,11 +2,11 @@ import React from 'react'
 import './Scroll.css'
 import Scrol from './assets/scroll2.gif'
 
-function Scroll() {
+function Scroll({imgSrc}) {
 
   return (
     <div className='scroll-content'>
-      <div className='scroll-img'><img src={Scrol} style={{height:"400px"}} /></div>
+      <div className='scroll-img'><img src={imgSrc} style={{height:"400px"}} alt='Scroll Image' /></div>
     </div>
   )
 }

@@ -31,10 +31,10 @@ function Navbar() {
           </div>
           <div className='grouplinks'>
             <div className='headerlinks'>
-              <Link className='t' to="Home"> Home</Link>
-              <Link className='t' to="Work"> Work</Link>
-              <Link className='t' to="About"> About</Link>
-              <Link className='t' to="Writing"> Writing</Link>
+              <Link className='t' to="/Holding" onClick={handleDisplay} > Home</Link>
+              <Link className='t' to="/Work" onClick={handleDisplay} > Work</Link>
+              <Link className='t' to="/About" onClick={handleDisplay} > About</Link>
+              {/* <Link className='t' to="/Writing" onClick={handleDisplay} > Writing</Link> */}
             </div>
             <div className='grouplinks-contents'><span className='letter'> Back to home page</span>
               <span className='letter'> My approach to development</span>

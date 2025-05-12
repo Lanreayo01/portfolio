@@ -1,0 +1,37 @@
+.about{
+    background-color: #F2EFE7;
+}
+.about-header{
+    margin-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+}
+.about-body{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+.about-message{
+    flex: 6;
+    padding: 25px;    
+}
+.about-image{
+    flex: 6;
+    padding: 25px;
+}
+.body-down{
+    display: flex;
+    flex-direction: row;
+}
+.down-img{
+    flex: 6;
+    padding: 25px;    
+}
+.down-content{
+    flex: 6;
+    padding: 25px;    
+}

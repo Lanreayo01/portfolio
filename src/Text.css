@@ -1,3 +1,15 @@
 .text{
     color: cadetblue;
 }
+h1{
+    font-family: "Rye", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+}
+
+p{
+    font-family: "Rye", serif;
+    font-weight: 300;
+    font-style: normal;
+}
