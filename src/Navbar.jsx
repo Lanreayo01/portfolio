@@ -20,9 +20,9 @@ function Navbar() {
 
   return (
     <div className='header'>
-     <div className='left-side' >
-        <span className='header-image'><img src={Head} style={{height:'70px'}} alt='header'/></span>
-        <button className='header-text icon-button' onClick={handleDisplay}>{!isDisplayHeader? "Menu" : "Close"} </button>
+     <div><div className='left-side' >
+        <span className='header-image'><img src={Head} className='Head' style={{height:'70px'}} alt='header'/></span>
+        <button className='header-text icon-button' onClick={handleDisplay}>{!isDisplayHeader? "Menu" : "Close"} </button></div>
         <div className='header-content' style={{ display: isDisplayHeader ? 'block' : 'none' }}>
           <div className='Header-Icons'><span> <img src={X} className='icon-button' style={{ height: '30px' }} /> </span>
             <span> <img src={Insta} className='icon-button' style={{ height: '30px' }} /> </span>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Alfred from './assets/alfred.png'; // Your cartoon image
+import './AnimatedImage.css'; // Import the CSS file
 
 // Blinking eye component with tracking
 const Eye = ({ style }) => {
@@ -40,7 +41,7 @@ const Eye = ({ style }) => {
   const pupil = getPupilOffset();
   
   return (
-    <div style={{ position: 'absolute', ...style, width: 50, height: 30 }}>
+    <div className="eye" style={style}>
       <svg width="50" height="30">
         {isBlinking ? (
           // Closed eye (just a line when blinking)
@@ -53,11 +54,11 @@ const Eye = ({ style }) => {
         ) : (
           // Open eye
           <>
-            <ellipse cx="20" cy="20" rx="20" ry="10" fill="white" stroke="black" strokeWidth="2" />
+            <ellipse cx="20" cy="15" rx="16" ry="8" fill="white" stroke="black" strokeWidth="2" />
             <motion.circle
               cx={25 + pupil.x}
               cy={15 + pupil.y}
-              r="7"
+              r="5"
               fill="black"
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
             />
@@ -107,7 +108,7 @@ const AnimatedImage = () => {
   };
   
   return (
-    <div style={{ position: 'relative', width: '300px', height: 'auto' }}>
+    <div className="animated-container">
       {!hasEntered && (
         <motion.img
           src={Alfred}
@@ -121,17 +122,12 @@ const AnimatedImage = () => {
             duration: 0.8,
           }}
           onAnimationComplete={() => setHasEntered(true)}
-          style={{
-            width: '300px',
-            height: 'auto',
-            transform: 'scaleX(-1)', // Flip during animation
-            position: 'absolute',
-          }}
+          className="alfred-image"
         />
       )}
       
       {hasEntered && (
-        <div style={{ position: 'relative' }}>
+        <div className="animated-content">
           <motion.div
             animate={isHovered ? "hover" : "normal"}
             variants={hoverAnimation}
@@ -152,17 +148,12 @@ const AnimatedImage = () => {
               <motion.img
                 src={Alfred}
                 alt="Cartoon"
-                style={{
-                  width: '500px',
-                  height: 'auto',
-                }}
+                className="alfred-image"
               />
               {/* 👁 Left Eye */}
-              <Eye style={{ top: 170, left: 202 }} /> {/* Adjust these positions to match your image */}
+              <Eye style={{ top: 98, left: 112 }} /> {/* Adjust these positions to match your image */}
               {/* 👁 Right Eye */}
-              <Eye style={{ top: 170, left: 300 }} /> {/* Adjust as needed */}
-
-      
+              <Eye style={{ top: 98, left: 170 }} /> {/* Adjust as needed */}
             </motion.div>
           </motion.div>
         </div>

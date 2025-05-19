@@ -6,7 +6,7 @@ function Scroll({imgSrc}) {
 
   return (
     <div className='scroll-content'>
-      <div className='scroll-img'><img src={imgSrc} style={{height:"400px"}} alt='Scroll Image' /></div>
+      <div className='scroll-img'><img src={imgSrc} className='scroll-down' style={{height:"400px"}} alt='Scroll Image' /></div>
     </div>
   )
 }

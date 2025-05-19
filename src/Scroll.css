@@ -19,6 +19,18 @@
 }
 
 .scroll-img{
-    margin-left: 400px;
+    margin-left: 350px;
     width: 30px;
+}
+
+@media screen and (max-width:600px){
+    .scroll-content{
+        background-color: red;
+        width: auto;
+    }
+    .scroll-down{
+        max-height: 200px;
+        width: 100px;
+        margin-left: -350px;
+    }
 }

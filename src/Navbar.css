@@ -83,9 +83,62 @@
 
 
 @media screen and (max-width:600px) {
-    body{
-        width: 100%;
+    .header{
         display: block;
+        width: 177px;
+        background-color: red;
+        
+    }
+    .Head{
+        
+        max-height: 36px;
+        background-color: purple;
+    }
+    .left-side{
+    padding: 10px;
+    background-color: blue;
+        display: flex;
+        flex-direction: row;
+        
+        .header-text{
+            max-height: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+    .right-side{
+        display: none;
+    }
+    .header-text{
+        max-height: 15px;
+    }
+    .header-content{
+        bottom: 0;
+        max-height: 200px;
+        bottom: 0;
+    }
+    .grouplinks-contents{
+        display: none;
+    }
+    .Header-Icons{
+        display: flex;
+        padding: 15px;
+        gap: 7px;
+    }
+    .headerlinks{
+        margin-top: -35px;
+        max-height: 50px;
+        display: flex;
+        .t{
+            color: brown;
+            font-size: small;
+            margin-top: -15px;
+        }
+    }
+    h1{
+        font-family: "Rye", serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 10px;
     }
 }
 

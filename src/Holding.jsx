@@ -37,8 +37,8 @@ function Holding() {
     </div>
     </div>
     
-    <div>
-      <Scroll imgSrc={HoldingSroll}/>
+    <div className='scroll-image'>
+      <Scroll imgSrc={HoldingSroll} className='HoldingSroll'/>
     </div>
     
     <div>
